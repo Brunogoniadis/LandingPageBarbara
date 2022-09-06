@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=MonteCarlo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --red:#d63a25;
+    --white:#fff;
+    --dark: rgb(8, 8, 8);
+}
+body{
+    color: var(--dark);
+    background: var(--dark);
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 1rem rgb(255, 255, 255);
+    width: 100%;
+    height: 8%;
+    background: var(--dark);
+    transition: all 0.5s;
+    position: fixed;
+    z-index: 10;
+}
+.navigation .logo{
+    color: var(--red);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.logo span{
+    color: var(--white);
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navigation ul li a{
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.navigation ul li a:hover{
+    color: var(--red);
+}
+.navigation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.home{
+    width: 100%;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    object-fit: cover;
+  }
+
+.boxAdvogados{
+    display: flex;
+}
+
+.advogados{
+    width: 100%;
+    background-color: var(--dark);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.advogadoCompleto{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    width: 15em;
+    height: 10em;
+    padding: 1%;
+    box-shadow: 0 0.1rem 0.5rem rgb(231, 222, 222);
+
+    margin: 2%;
+    border-radius: 2%;
+    margin-bottom: 20%;
+    
+}
+
+
+.texto-ad{
+    font-size: 2.5rem;
+    margin-top: 2%;
+    color: white;
+    margin-bottom: 3%;
+    text-shadow: 0 0.1rem 0.5rem #ccc;
+}
+
+.textoDescricaoPerfil .text{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1em 0;
+}
+
+
+.fotoPerfil{
+    margin-top: 20px;
+    width: 10em;
+    height: 10em;
+    border-radius: 2%;
+    border: 1.5px solid #1e1c2a;
+    box-shadow: 0 0.9rem 0.9rem rgb(202, 200, 200);
+}
+
+.tituloPerfil {
+    font-size: 1rem;
+    margin-bottom: 1%;
+    margin-top: 4%;
+}
+.cargoPerfil{
+    font-size: 1rem;
+    margin-bottom: 1%;
+}
+.descricaoPerfil{
+    font-size: 1rem;
+}
+
+.area{
+    width: 100%;
+    background-color: var(--dark);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.boxArea{
+    display: flex;
+    background-color: var(--dark);
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxers{
+    display: flex;
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 9;
+    margin-left: 1%
+  }
+
+.logoForm{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-width: 0.1em;
+    filter: brightness(25%);
+    margin-bottom: 2%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--dark);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .8s ease;
+    border-radius: 1%;
+
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .contatoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+
+  }
+
+  .finalHeader{
+    height: 3em;
+    background-color: #2e2e2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .textoFinal{
+    color: var(--white);
+    font-size: 0.8em;
+  }
+
+  .textForm{
+    height: 3em;
+    width: 22.4em;
+    margin-bottom: 0.5em;
+  }
+
+  .textEmail{
+    width: 45em;
+    height: 5;
+    border-radius: 2%;
+  }
+
+  .sendButton{
+    height: 4em;
+    width: 10em;
+    border-radius: 2@;
+  }
+
+  .formText{
+    color: white;
+  }
+
+.idArea{
+    font-size: 35px;
+    color: white;
+    text-shadow: 0 0.1rem 0.5rem #ccc;
+    margin-bottom: 2%;
+}
+
+.home-text{
+    max-width: 37rem;
+}
+
+.home-text .text-h1{
+    color: var(--white);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    text-shadow: 0 0.1rem 0.5rem #ccc;
+}
+.home-text p{
+    color: var(--white);
+    margin-bottom: 4rem;
+    text-shadow: 0 0.1rem 0.5rem #ccc;
+}
+.home-btn{
+    padding: 15px 45px;
+    background: var(--dark);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.home-btn:hover{
+    background: #47435c;
+}
+.home-img img{
+    margin-left: 35%;
+    width: 80%;
+}
+
+
+
+
+
+
+@media (max-width:785px) {
+    .navigation{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform: rotate(360deg);
+    }
+
+    .menu.ativo .bar:nth-child(3){
+        transform: rotate(-360deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    /*main*/
+    .home{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+    }
+    .home .text-h4{
+        font-size: 15px;
+    }
+    .home .text-h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p{
+        font-size: 15px;
+    }
+    .home-img{
+        width: 80%;
+    }
+}
