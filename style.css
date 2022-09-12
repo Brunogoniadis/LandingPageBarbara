@@ -31,6 +31,14 @@ body {
     height: 1px;
     margin-bottom: 3%;
 }
+.divisorFinal {
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    margin-left: 10.8%;
+    width: 79.3%;
+    height: 1px;
+    margin-bottom: 3%;
+}
 
 
 .navigation {
@@ -62,7 +70,7 @@ body {
 }
 
 .nav-item {
-    margin-right: 5%;
+    font-size: 0.0rem;
 }
 
 .logo span {
@@ -382,15 +390,66 @@ body {
 }
 
 .home-btn:hover {
-    background: #47435c;
+    background: var(--white);
+    color: var(--dark);
+    transform: scale(2.0);
 }
 
 .home-img img {
     margin-left: 35%;
     width: 80%;
 }
+@media(max-width:375px){
+    .texto-ad{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media(max-width:1090px){
+    .divisorFinal {
+        background-color: rgb(100, 100, 100);
+        display: flex;
+        margin-left: 10.8%;
+        width: 79.3%;
+        height: 1px;
+        margin-bottom: 75%;
+    }
+    .divisorFinal {
+        background-color: rgb(100, 100, 100);
+        display: flex;
+        margin-left: 10.8%;
+        width: 79.3%;
+        height: 1px;
+        margin-bottom: 1%;
+    }
+    .logo{
+        font-size: 70px;
+        text-align: start;
+    }
+    .navigation{
+        height: 15%;
+    }
 
-@media (max-width:785px) {
+}
+
+@media (max-width:953px) {
+
+    .home-btn {
+        padding: 15px 25px;
+        background: var(--dark);
+        color: var(--white);
+        border-radius: 10px;
+        transition: all 0.5s;
+    }
+    
+    .home-btn:hover {
+        background: var(--white);
+        color: var(--dark);
+        transform: scale(2.0);
+    }
+
+
     .navigation {
         position: fixed;
         width: 100%;
@@ -415,7 +474,7 @@ body {
 
     .nav-menu {
         position: fixed;
-        margin-left: 22%;
+        margin-left: 25%;
         top: 170px;
         gap: 1px;
         transition: 0.3s;
@@ -431,7 +490,6 @@ body {
         padding: 100px 2%;
         flex-direction: column;
         text-align: center;
-        overflow: hidden;
         gap: 5rem;
         background-size: cover;
     }
@@ -441,6 +499,7 @@ body {
     }
 
     .home .text-h1 {
+        margin-top: 50%;
         font-size: 2.5rem;
         line-height: 3rem;
     }
@@ -455,7 +514,7 @@ body {
     .area{
         margin-bottom: 30%;
     }
-    texto-adContato{
+    .texto-adContato{
         margin-bottom: 4%;
     }
 
@@ -477,11 +536,18 @@ body {
         align-items: center;
         justify-content: center;
     }
+    .divisorFinal {
+        background-color: rgb(100, 100, 100);
+        display: flex;
+        margin-left: 10.8%;
+        width: 79.3%;
+        height: 1px;
+        margin-bottom: 75%;
+    }
     .contato{
         display: flex;
         flex-direction: column;
         align-items: center;
-        outline: 5px solid red;
     }
     .texto-adContato {
         align-items: center;
@@ -501,10 +567,9 @@ body {
         align-items: center;  
     }
     .formIcons{
-        outline: 5px solid red;
         display: flex;
         flex-direction: row;
-        margin-right: 10%;
+        margin-right: 14%;
         align-items: center;
     }
 }
