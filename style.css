@@ -403,21 +403,20 @@ body {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        margin-bottom: 30%;
-        margin-right: 60%;
-        outline: 5px solid red;
+        margin-bottom: 3%;
     }
     .navigationCenter{
         width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-menu {
-        display: flex;
         position: fixed;
-        margin-left: -18%;
+        margin-left: 22%;
         top: 170px;
-        width: 100%;
-        flex-direction: row;
         gap: 1px;
         transition: 0.3s;
     }
@@ -434,6 +433,7 @@ body {
         text-align: center;
         overflow: hidden;
         gap: 5rem;
+        background-size: cover;
     }
 
     .home .text-h4 {
@@ -451,6 +451,12 @@ body {
 
     .home-img {
         width: 80%;
+    }
+    .area{
+        margin-bottom: 30%;
+    }
+    texto-adContato{
+        margin-bottom: 4%;
     }
 
     .boxAdvogados {
@@ -471,11 +477,15 @@ body {
         align-items: center;
         justify-content: center;
     }
-
+    .contato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        outline: 5px solid red;
+    }
     .texto-adContato {
         align-items: center;
         justify-content: center;
-        margin-top: 50%;
     }
     .textEmail{
         display: flex;
@@ -488,6 +498,13 @@ body {
     .textFormContainer{
         display: flex;
         flex-direction: column;
-        align-items: center;   
+        align-items: center;  
+    }
+    .formIcons{
+        outline: 5px solid red;
+        display: flex;
+        flex-direction: row;
+        margin-right: 10%;
+        align-items: center;
     }
 }
