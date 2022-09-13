@@ -12,4 +12,4 @@ Landingpage feita para Advogada Bárbara para captação de clientes
 </div>
 <br>
 <br>
-brunogoniadis.github.io/LandingPageBarbara/
+https://brunogoniadis.github.io/LandingPageBarbara
