@@ -10,6 +10,6 @@ Landingpage feita para Advogada Bárbara para captação de clientes
   <img src="https://raw.githubusercontent.com/Brunogoniadis/LandingPageBarbara/main/Capturas%20para%20Readme/CapturarResponsivo.png"/>
   <img src="https://raw.githubusercontent.com/Brunogoniadis/LandingPageBarbara/main/Capturas%20para%20Readme/CapturarWEB.png"/>
 </div>
-
-Link no GitPages:
-https://brunogoniadis.github.io/LandingPageBarbara/
+<br>
+<br>
+brunogoniadis.github.io/LandingPageBarbara/
